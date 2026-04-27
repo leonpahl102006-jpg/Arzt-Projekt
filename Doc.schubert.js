@@ -67,7 +67,7 @@ function getBotReply(userText) {
     answers.push("Die Sprechzeiten sind: Montag 08:00–16:30, Dienstag 08:00–16:30, Mittwoch 08:00–12:00, Donnerstag 08:00–17:30 und Freitag 08:00–12:00.");
   }
 
-  if (hasAny(text, ["telefon", "nummer", "anrufen", "kontakt", "fax"])) {
+  if (hasAny(text, ["telefon", "nummer", "kontakt", "fax"])) {
     answers.push("Sie erreichen die Praxis telefonisch unter 04332 - 99 73 0. Die Faxnummer lautet 04332 - 99 73 33.");
   }
 
@@ -75,7 +75,7 @@ function getBotReply(userText) {
     answers.push("Die Praxis befindet sich in der Dorfstr. 27a, 24800 Elsdorf-Westermühlen.");
   }
 
-  if (hasAny(text, ["termin", "terminvereinbarung", "voranmeldung", "buchen"])) {
+  if (hasAny(text, [ terminvereinbarung", "voranmeldung", "buchen"])) {
     answers.push("Um telefonische Terminvereinbarung wird gebeten. Bitte rufen Sie dafür unter 04332 - 99 73 0 an.");
   }
 
@@ -83,7 +83,7 @@ function getBotReply(userText) {
     answers.push("Die Praxis bietet unter anderem Vorsorgeuntersuchungen, Impfungen, Reisemedizin, kleine Operationen, Chirotherapie, EKG, Ultraschall und diabetische Grundversorgung an.");
   }
 
-  if (hasAny(text, ["notfall", "dringend", "akut", "sofort"])) {
+  if (hasAny(text, ["dringend", "akut", "sofort"])) {
     answers.push("Bei Notfällen kontaktieren Sie bitte direkt die Praxis telefonisch unter 04332 - 99 73 0. In lebensbedrohlichen Notfällen wählen Sie bitte 112.");
   }
 
