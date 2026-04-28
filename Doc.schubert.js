@@ -126,10 +126,6 @@ if (hasAny(text, ["heute offen", "heute geöffnet", "gerade offen", "jetzt geöf
     answers.push("Hallo 👋 Wie kann ich Ihnen helfen?");
   }
 
-  if (hasAny(text, ["oeffnungszeiten", "sprechzeiten", "offen", "geoeffnet", "uhrzeit"])) {
-    answers.push("Die Sprechzeiten sind: Montag 08:00–16:30, Dienstag 08:00–16:30, Mittwoch 08:00–12:00, Donnerstag 08:00–17:30 und Freitag 08:00–12:00.");
-  }
-
   if (hasAny(text, ["telefon", "nummer", "kontakt", "fax"])) {
     answers.push("Sie erreichen die Praxis telefonisch unter 04332 - 99 73 0. Die Faxnummer lautet 04332 - 99 73 33.");
   }
