@@ -60,6 +60,68 @@ function getBotReply(userText) {
   const text = normalizeText(userText);
   const answers = [];
 
+
+const jetzt = new Date();
+const tag = jetzt.getDay();
+const aktuelleMinuten = jetzt.getHours() * 60 + jetzt.getMinutes();
+
+function istZwischen(start, ende) {
+  return aktuelleMinuten >= start && aktuelleMinuten <= ende;
+}
+
+function uhrzeitZuMinuten(uhrzeit) {
+  const [stunden, minuten] = uhrzeit.split(":").map(Number);
+  return stunden * 60 + minuten;
+}
+
+if (hasAny(text, ["heute offen", "heute geöffnet", "gerade offen", "jetzt geöffnet"])) {
+
+  if (tag === 1) {
+    if (istZwischen(uhrzeitZuMinuten("08:00"), uhrzeitZuMinuten("16:30"))) {
+      answers.push("Heute ist Montag. Die Praxis ist aktuell geöffnet bis 16:30 Uhr.");
+    } else {
+      answers.push("Heute ist Montag. Die Praxis ist von 08:00 bis 16:30 Uhr geöffnet.");
+    }
+  }
+
+  if (tag === 2) {
+    if (istZwischen(uhrzeitZuMinuten("08:00"), uhrzeitZuMinuten("16:30"))) {
+      answers.push("Heute ist Dienstag. Die Praxis ist aktuell geöffnet bis 16:30 Uhr.");
+    } else {
+      answers.push("Heute ist Dienstag. Die Praxis ist von 08:00 bis 16:30 Uhr geöffnet.");
+    }
+  }
+
+  if (tag === 3) {
+    if (istZwischen(uhrzeitZuMinuten("08:00"), uhrzeitZuMinuten("12:00"))) {
+      answers.push("Heute ist Mittwoch. Die Praxis ist aktuell geöffnet bis 12:00 Uhr.");
+    } else {
+      answers.push("Heute ist Mittwoch. Die Praxis ist von 08:00 bis 12:00 Uhr geöffnet.");
+    }
+  }
+
+  if (tag === 4) {
+    if (istZwischen(uhrzeitZuMinuten("08:00"), uhrzeitZuMinuten("17:30"))) {
+      answers.push("Heute ist Donnerstag. Die Praxis ist aktuell geöffnet bis 17:30 Uhr.");
+    } else {
+      answers.push("Heute ist Donnerstag. Die Praxis ist von 08:00 bis 17:30 Uhr geöffnet.");
+    }
+  }
+
+  if (tag === 5) {
+    if (istZwischen(uhrzeitZuMinuten("08:00"), uhrzeitZuMinuten("12:00"))) {
+      answers.push("Heute ist Freitag. Die Praxis ist aktuell geöffnet bis 12:00 Uhr.");
+    } else {
+      answers.push("Heute ist Freitag. Die Praxis ist von 08:00 bis 12:00 Uhr geöffnet.");
+    }
+  }
+
+  if (tag === 6 || tag === 0) {
+    answers.push("Heute ist die Praxis geschlossen.");
+  }
+}
+  
+
   if (hasAny(text, ["hallo", "hey", "moin", "guten tag"])) {
     answers.push("Hallo 👋 Wie kann ich Ihnen helfen?");
   }
