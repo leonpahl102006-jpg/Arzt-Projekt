@@ -122,5 +122,5 @@ Verhalten:
 });
 
 app.listen(3000, () => {
-  console.log("Server läuft auf https://arzt-projekt.onrender.com");
+  console.log("Server läuft auf https://arzt-projekt-1.onrender.com");
 });
