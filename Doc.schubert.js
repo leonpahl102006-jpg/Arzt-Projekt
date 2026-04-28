@@ -74,7 +74,7 @@ function uhrzeitZuMinuten(uhrzeit) {
   return stunden * 60 + minuten;
 }
 
-if (hasAny(text, ["heute offen", "heute geöffnet", "gerade offen", "jetzt geöffnet"])) {
+if (hasAny(text, ["heute offen", "heute geöffnet", "gerade offen", "jetzt geöffnet", "gerade geöffnet","gerade offen", "Später geöffnet" ])) {
 
   if (tag === 1) {
     if (istZwischen(uhrzeitZuMinuten("08:00"), uhrzeitZuMinuten("16:30"))) {
