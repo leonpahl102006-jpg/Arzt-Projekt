@@ -75,7 +75,7 @@ function getBotReply(userText) {
     answers.push("Die Praxis befindet sich in der Dorfstr. 27a, 24800 Elsdorf-Westermühlen.");
   }
 
-  if (hasAny(text, [ terminvereinbarung", "voranmeldung", "buchen"])) {
+  if (hasAny(text, ["termin", "terminvereinbarung", "voranmeldung", "buchen"])) {
     answers.push("Um telefonische Terminvereinbarung wird gebeten. Bitte rufen Sie dafür unter 04332 - 99 73 0 an.");
   }
 
@@ -83,7 +83,7 @@ function getBotReply(userText) {
     answers.push("Die Praxis bietet unter anderem Vorsorgeuntersuchungen, Impfungen, Reisemedizin, kleine Operationen, Chirotherapie, EKG, Ultraschall und diabetische Grundversorgung an.");
   }
 
-  if (hasAny(text, ["dringend", "akut", "sofort"])) {
+  if (hasAny(text, ["notfall", "dringend", "akut", "sofort"])) {
     answers.push("Bei Notfällen kontaktieren Sie bitte direkt die Praxis telefonisch unter 04332 - 99 73 0. In lebensbedrohlichen Notfällen wählen Sie bitte 112.");
   }
 
