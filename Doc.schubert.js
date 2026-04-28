@@ -102,7 +102,7 @@ async function askServer(userText) {
   chatMessages.scrollTop = chatMessages.scrollHeight;
 
   try {
-    const response = await fetch("https://arzt-projekt.onrender.com/api/chat", {
+    const response = await fetch("https://arzt-projekt-1.onrender.com/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
