@@ -14,6 +14,7 @@ toggleButton.addEventListener("click", () => {
     chatBox.style.display = "flex";
     toggleButton.textContent = "✖";
     chatHint.style.display = "none";
+    input.focus();
   } else {
     chatBox.style.display = "none";
     toggleButton.textContent = "💬";
