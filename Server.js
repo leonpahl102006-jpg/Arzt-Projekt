@@ -49,13 +49,6 @@ Dorfstr. 27a, 24800 Elsdorf-Westermühlen
 Telefon:
 04332 - 99 73 0
 
-Öffnungszeiten:
-Montag 08:00–16:30
-Dienstag 08:00–16:30
-Mittwoch 08:00–12:00
-Donnerstag 08:00–17:30
-Freitag 08:00–12:00
-
 Leistungen:
 Allgemeinmedizin, Chirotherapie, EKG, Ultraschall, Diabetesversorgung, Impfungen, Reisemedizin, Vorsorgeuntersuchungen, Langzeit-Blutdruckmessung, Lungenfunktionstest, Hausbesuche nach Absprache.
 
@@ -80,7 +73,7 @@ Wichtige Regeln:
 
 Terminregeln:
 - Bei Terminfragen freundlich sagen, dass Termine telefonisch vereinbart werden
-- Keine festen Termine vergeben
+- Keine festen Termine vergeben, und es muss telefonisch vorher vereinbart werden.
 
 Rezepte und Überweisungen:
 - Bei Fragen zu Rezepten oder Überweisungen freundlich auf telefonische Rücksprache mit der Praxis verweisen
