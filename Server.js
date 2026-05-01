@@ -117,3 +117,17 @@ Verhalten:
 app.listen(3000, () => {
   console.log("Server läuft auf https://arzt-projekt-1.onrender.com");
 });
+
+const chats = {};
+
+app.post("/api/chat", (req, res) => {
+  const { message, userId } = req.body;
+
+  if (!chats[userId]) {
+    chats[userId] = [];
+  }
+
+  chats[userId].push(message);
+
+  // Antwort generieren...
+});
